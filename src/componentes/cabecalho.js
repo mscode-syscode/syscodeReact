@@ -17,13 +17,13 @@ const Cabecalho = props =>{
                             <li><a href='/'>ABOUT</a></li>
                             <li><a href='/servicos'>SERVICES</a></li>
                             <li><a href='#portfolio'>PORTFOLIO</a></li>
+                            <li><a href='/empresas'>EMPRESAS</a></li>
                             <li><a href='#pricing'>PRICING</a></li>
                             <li><a href='#contact'>CONTACT</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
-
     )
 }
 
