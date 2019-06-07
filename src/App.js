@@ -7,6 +7,7 @@ import Cabecalho from './componentes/cabecalho'
 import Inicio from './componentes/Inicio'
 import Servicos from './componentes/Servicos'
 import Empresas from './componentes/Empresas'
+import Jobs from './componentes/Jobs'
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
           <Route path='/' exact component={Inicio} />
           <Route path='/servicos' component={Servicos} />
           <Route path='/empresas' component={Empresas} />
+          <Route path='/jobs' component={Jobs} />
 
           <Footer />
         </div>

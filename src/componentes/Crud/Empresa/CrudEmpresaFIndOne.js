@@ -1,6 +1,8 @@
 import React from 'react'
 
-const URL = 'http://localhost:8090';
+const URL = 'http://localhost:8080';
+
+
 
 class CRUD extends React.Component {
   constructor(props) {
@@ -12,7 +14,7 @@ class CRUD extends React.Component {
 
   // get / findAll
   componentDidMount() {
-    fetch(`${URL}/empresas`)
+    fetch(`${URL}/empresas/1`)
       .then(res => res.json())
       .then(
         (result) => {

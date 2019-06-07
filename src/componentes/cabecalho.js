@@ -10,16 +10,17 @@ const Cabecalho = props =>{
                             <span className='icon-bar'></span>
                             <span className='icon-bar'></span>
                         </button>
-                        <a className='navbar-brand' href='#myPage'>Logo</a>
+                        <a className='navbar-brand' href='/'>HOME</a>
                     </div>
                     <div className='collapse navbar-collapse' id='myNavbar'>
                         <ul className='nav navbar-nav navbar-right'>
-                            <li><a href='/'>ABOUT</a></li>
-                            <li><a href='/servicos'>SERVICES</a></li>
-                            <li><a href='#portfolio'>PORTFOLIO</a></li>
+                            <li><a href='/jobs'>JOBS</a></li>
+                            <li><a href='/servicos'>LISTAS</a></li>
+                            <li><a href='/empresas'>CADASTROS</a></li>
                             <li><a href='/empresas'>EMPRESAS</a></li>
-                            <li><a href='#pricing'>PRICING</a></li>
-                            <li><a href='#contact'>CONTACT</a></li>
+                            <li><a href='/producao'>PRODUÇÃO</a></li>
+                            <li><a href='/financeiro'>FINANCEIRO</a></li>
+                            <li><a href='/adminstracao'>ADMINISTRAÇÃO</a></li>
                         </ul>
                     </div>
                 </div>

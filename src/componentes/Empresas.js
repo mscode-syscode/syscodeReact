@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Empresas from './Crud'
+import Empresas from './Crud/Empresa/CrudEmpresasFindAll'
 
 const Empresa = props => {
     return (
