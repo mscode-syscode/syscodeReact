@@ -1,4 +1,5 @@
 import React from 'react'
+import axios from 'axios'
 
 const URL = 'http://localhost:8080';
 
@@ -6,21 +7,16 @@ class CRUD extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      items: []
+      empresas: []
     };
   }
 
   // get / findAll
   componentDidMount() {
-    fetch(`${URL}/empresas`)
-      .then(res => res.json())
-      .then(
-        (result) => {
-          this.setState({
-            items: result
-          });
-        }
-      )
+    axios.get(`${URL}/empresas`).then(response => response.data)
+      .then((data) => {
+        this.setState({ empresas: data })
+      })
   }
 
   render() {
@@ -35,13 +31,13 @@ class CRUD extends React.Component {
               <td>cep</td>
               <td>cidade</td>
             </tr>
-            { this.state.items.map(item => (
-              <tr key={item.idempresa.toString()}>
-                <td>{item.idempresa}</td>
-                <td>{item.empresa}</td>
-                <td>{item.bairro}</td>
-                <td>{item.cep}</td>
-                <td>{item.cidade}</td>
+            {this.state.empresas.map(empresa => (
+              <tr key={empresa.idempresa.toString()}>
+                <td>{empresa.idempresa}</td>
+                <td>{empresa.empresa}</td>
+                <td>{empresa.bairro}</td>
+                <td>{empresa.cep}</td>
+                <td>{empresa.cidade}</td>
               </tr>
             )
             )

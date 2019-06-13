@@ -8,7 +8,6 @@ const Jobs = props => {
             
             <div className='row '>
 
-                {/* <Empresas /> */}
                 <Jobs />
 
             </div>
