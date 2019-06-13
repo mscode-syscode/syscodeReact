@@ -28,7 +28,7 @@ class CRUD extends React.Component {
   render() {
     return (
       <div className='col-md-12'>
-        <table className='table table-striped '>
+        <table className='table table-stripeds '>
           <tbody className='thead-dark'>
             <tr>
               <td>IdJob</td>
