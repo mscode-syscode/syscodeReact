@@ -25,7 +25,7 @@ class CRUD extends React.Component {
         <table className='table table-striped '>
           <tbody className='thead-dark'>
             <tr>
-              <td>IdEmpresa</td>
+              <td>idEmpresa</td>
               <td>Empresa</td>
               <td>bairro</td>
               <td>cep</td>
